@@ -14,10 +14,11 @@ export default defineGkdApp({
             'TextView[text="上滑继续观看短剧"]',
             'TextView[text="返回并退出"]',
           ],
+          // @ts-expect-error - swipe action 未在类型定义中声明
           action: 'swipe',
           swipeArg: {
-            start: { x: 'width * 0.5', y: 'height * 0.82' },
-            end: { x: 'width * 0.5', y: 'height * 0.25' },
+            start: { x: 'screenWidth * 0.5', y: 'screenHeight * 0.82' },
+            end: { x: 'screenWidth * 0.5', y: 'screenHeight * 0.25' },
             duration: 300,
           },
           fastQuery: true,
