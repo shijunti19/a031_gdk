@@ -23,7 +23,7 @@ export default defineGkdApp({
           },
           fastQuery: true,
           matchTime: 3000,
-          resetMatch: 'activity',
+          resetMatch: 'match',
           activityIds: [
             'com.ss.android.ugc.aweme.playlet.videodetail.PlayletVideoPlayActivity',
           ],
